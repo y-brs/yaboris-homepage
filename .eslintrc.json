@@ -5,9 +5,10 @@
     "no-unused-vars": [
       "error",
       {
-        "argsIhnorePattern": "^_",
-        "varsIhnorePattern": "^_"
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
       }
-    ]
+    ],
+    "react/display-name": 0
   }
 }
