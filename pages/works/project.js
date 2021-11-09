@@ -11,7 +11,7 @@ const Work = () => (
         Project 1 <Badge>2016–2021</Badge>
       </Title>
       <P>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus justo, consequat non sem in, mattis luctus nisi. Vivamus quis laoreet leo, a varius nisl. Fusce a ipsum a odio feugiat facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt molestie dolor vitae luctus. Donec turpis ante, faucibus in elit sed, viverra sodales libero. Morbi ornare, leo sit amet scelerisque pharetra, augue eros euismod felis, at dignissim ligula purus nec ex. Nulla vel nunc vestibulum, faucibus ipsum eu, tincidunt mauris. Vivamus ut dui molestie, pellentesque nulla eget, rutrum eros. Nullam faucibus felis eu eros congue, convallis blandit ipsum faucibus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lectus justo, consequat non sem in, mattis luctus nisi. Vivamus quis laoreet leo, a varius nisl. Fusce a ipsum a odio feugiat facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras tincidunt molestie dolor vitae luctus. Donec turpis ante, faucibus in elit sed, viverra sodales libero. Morbi ornare, leo sit amet scelerisque pharetra, augue eros euismod felis, at dignissim ligula purus nec ex. Nulla vel nunc vestibulum, faucibus ipsum eu, tincidunt mauris. Vivamus ut dui molestie, pellentesque nulla eget, rutrum eros. Nullam faucibus felis eu eros congue, convallis blandit ipsum faucibus.
       </P>
       <P>
         Donec convallis tellus vitae ligula semper dignissim nec vel nibh.

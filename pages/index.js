@@ -4,10 +4,10 @@ import Section from "../components/section"
 import Paragraph from "../components/paragraph"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { BioSection, BioYear  } from "../components/bio"
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoDiscord } from 'react-icons/io5'
+import { GridItem } from "../components/grid-item"
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoDiscord } from "react-icons/io5"
 
-import thumbPost from '../public/images/contents/post.jpg'
+import thumbPost from "../public/images/contents/post.jpg"
 
 const Page = () => {
   return (
