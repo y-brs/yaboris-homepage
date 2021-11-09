@@ -1,12 +1,17 @@
 import NextLink from "next/link"
-import { Button, Box, Container, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import { Button, Box, Container, Heading, Image, List, ListItem, Link, Icon, SimpleGrid, useColorModeValue } from "@chakra-ui/react"
 import Section from "../components/section"
 import Paragraph from "../components/paragraph"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { BioSection, BioYear  } from "../components/bio"
+import { GridItem } from '../components/grid-item'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoDiscord } from 'react-icons/io5'
+
+import thumbPost from '../public/images/contents/post.jpg'
 
 const Page = () => {
   return (
+    <>
     <Container>
       <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mt={3} mb={6} align="center">
         Hello, I&apos;m a full-stack developer based in Town!
@@ -74,7 +79,7 @@ const Page = () => {
 
         <BioSection>
           <BioYear>2005</BioYear>
-          Worked at Google Ireland
+          Worked at Google
         </BioSection>
 
         <BioSection>
@@ -92,7 +97,88 @@ const Page = () => {
           Art, Misic, Drawing, Cycling, Playing Drums, Photography, Leica, Running.
         </Paragraph>
       </Section>
-    </Container>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/craftzdog" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @github
+              </Button>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link href="https://twitter.com" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoTwitter} />}
+              >
+                @twitter
+              </Button>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link href="https://instagram.com" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoInstagram} />}
+              >
+                @instagram
+              </Button>
+            </Link>
+          </ListItem>
+
+          <ListItem>
+            <Link href="https://discord.gg/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoDiscord} />}
+              >
+                discord
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+
+        <SimpleGrid columns={[1, 2, 2]} gap={6} mt={5}>
+          <GridItem
+            href="https://google.com"
+            title="Lorem ipsum"
+            thumbnail={thumbPost}
+          >
+            Lorem ipsum dolor sit amet
+          </GridItem>
+          <GridItem
+            href="https://google.com"
+            title="Lorem ipsum"
+            thumbnail={thumbPost}
+          >
+            Lorem ipsum dolor sit amet
+          </GridItem>
+        </SimpleGrid>
+
+        <Box align="center" my={5}>
+          <NextLink href="/posts">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              Popular posts
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
+      </Container>
+    </>
   )
 }
 

@@ -1,19 +1,6 @@
 import Logo from "./logo"
 import NextLink from "next/link"
-import {
-  Container,
-  Box,
-  Link,
-  Stack,
-  Heading,
-  Flex,
-  Menu,
-  MenuItem,
-  MenuList,
-  MenuButton,
-  IconButton,
-  useColorModeValue
-} from "@chakra-ui/react"
+import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from "@chakra-ui/react"
 import { HamburgerIcon } from "@chakra-ui/icons"
 import ThemeToggleButton from "./theme-toggle-button"
 import { IoLogoGithub } from "react-icons/io5"
@@ -26,7 +13,7 @@ export const LinkItem = ({ href, path, _target, children, ...props }) => {
     <NextLink href={href} passHref>
       <Link
         p={2}
-        bg={active ? 'glassTeal' : undefined}
+        bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
         _target={_target}
         {...props}
@@ -75,6 +62,9 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
+          <LinkItem href="/posts" path={path}>
+            Posts
+          </LinkItem>
           <LinkItem href="/contacts" path={path}>
             Contacts
           </LinkItem>
@@ -107,12 +97,19 @@ const Navbar = props => {
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
+
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
+
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+
                 <NextLink href="/contacts" passHref>
                   <MenuItem as={Link}>Contacts</MenuItem>
                 </NextLink>
+
                 <MenuItem
                   as={Link}
                   href="https://github.com/"
