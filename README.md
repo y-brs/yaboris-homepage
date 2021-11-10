@@ -1,4 +1,4 @@
-# Takuya's Homepage
+# Simple Homepage
 
 [https://yaboris-homepage.vercel.app/](https://yaboris-homepage.vercel.app/)
 
@@ -22,8 +22,6 @@ $PROJECT_ROOT
 └── public
 ```
 
----
-
 ## Screenshot
 
-![Screenshot](/doc/thumbs.png "Screenshot")
+![Screenshot](https://yaboris-homepage.vercel.app/doc/thumbs.png "Screenshot")
