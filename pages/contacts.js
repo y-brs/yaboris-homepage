@@ -1,4 +1,4 @@
-import { Container, Heading } from "@chakra-ui/react"
+import { Container, Stack, Text, Heading } from "@chakra-ui/react"
 import Layout from "../components/layouts/article"
 
 const Contacts = () => (
@@ -8,10 +8,20 @@ const Contacts = () => (
         Contacts
       </Heading>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <p>urabitur lectus justo, consequat non sem in, mattis luctus nisi.</p>
-      <p>Vivamus quis laoreet leo, a varius nisl.</p>
-      <p>Fusce a ipsum a odio feugiat facilisis.</p>
+      <Stack spacing={3} mb={5}>
+        <Text fontSize="xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </Text>
+        <Text>
+          Urabitur lectus justo, consequat non sem in, mattis luctus nisi.
+        </Text>
+        <Text>
+          Vivamus quis laoreet leo, a varius nisl.
+        </Text>
+        <Text>
+          Fusce a ipsum a odio feugiat facilisis.
+        </Text>
+      </Stack>
     </Container>
   </Layout>
 )
