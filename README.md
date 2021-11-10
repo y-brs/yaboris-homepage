@@ -24,4 +24,4 @@ $PROJECT_ROOT
 
 ## Screenshot
 
-![Screenshot](https://yaboris-homepage.vercel.app/doc/thumbs.png "Screenshot")
+![Screenshot](https://github.com/ya-boris/yaboris-homepage/blob/534218a35d8864476c7209dfba62bca29bb9596d/doc/thumb.png "Screenshot")
